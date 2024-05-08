@@ -1,0 +1,69 @@
+.site-navbar {
+  font-size: 28px;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: space-between;
+
+  .nav-left {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .nav-right {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .brand {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .HStyle {
+    position: relative;
+    display: inline-block;
+  }
+
+  .HStyle::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    width: 0;
+    height: 2px;
+    background-color: #007bff;
+    transition: transform 0.3s ease-in-out, width 0.3s ease-in-out;
+  }
+
+  .HStyle:hover::after {
+    transform: translateX(-50%) scaleX(1);
+    width: 100%;
+  }
+
+  .HStyle:hover {
+    transform: scale(1.1);
+
+    transition: transform 0.3s ease-in-out;
+
+  }
+
+  .navL {
+    position: relative;
+    display: inline-block;
+
+    transition: color 0.3s ease-in-out;
+
+  }
+
+  .navL:hover {
+    color: #f034a8;
+    transform: translateY(-5px);
+    transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+
+  }
+}

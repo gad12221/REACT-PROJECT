@@ -1,0 +1,77 @@
+.register-container {
+  .password-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+
+    input {
+      width: 50%;
+      // margin: 0.25em;
+    }
+
+    svg {
+      width: 50%;
+      top: 80px;
+      @apply mx-2;
+
+      cursor: pointer;
+
+      &:hover {
+        @apply text-blue-500;
+
+        transform: scale(1.2);
+
+        transition: all 0.3s ease-in-out;
+
+      }
+
+    }
+  }
+
+
+  h2 {
+    @apply text-4xl mb-5 text-center;
+  }
+
+
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f3f3f3;
+  width: 100%;
+
+  section,
+  form {
+    @apply w-full;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input {
+    @apply w-1/2 p-2 mb-5 rounded-md;
+  }
+
+  button[type="submit"] {
+    @apply bg-blue-500 text-white p-2 rounded-md w-1/2;
+  }
+
+  .checkbox-container {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    // start at the left
+    justify-content: flex-start;
+
+    input {
+      width: fit-content;
+      margin: 0;
+      @apply mx-2;
+    }
+  }
+}
